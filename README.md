@@ -41,7 +41,3 @@ Testing is a first-class citizen. Every driver function is expected to have asso
 ```bash
 ceedling test:all
 ```
-
-## License
-
-This project includes components derived from various sources. Please check individual directories for license information.
