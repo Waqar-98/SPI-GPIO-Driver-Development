@@ -1,0 +1,15 @@
+# Ignore everything in the root
+/*
+
+# Un-ignore the drivers directory and its contents
+!drivers/
+!drivers/**
+
+# Un-ignore the root README.md
+!README.md
+
+# Un-ignore the root GEMINI.md
+!GEMINI.md
+
+# Un-ignore this .gitignore file itself
+!.gitignore
