@@ -1,34 +1,3 @@
-Embedded Firmware Project Context
-# STM32C031C6 Peripheral Driver Development | MISRA-C:2012 | Bare-Metal
-
----
-
-## Project Identity
-
-- **MCU:** STM32C031C6 (ARM Cortex-M0+, 48 MHz max, 32KB Flash, 12KB RAM, no FPU)
-- **Interface:** SPI1, GPIO, RCC
-- **Toolchain:** arm-none-eabi-gcc, Make/CMake
-- **Test Framework:** Unity + CMock, runner: Ceedling
-- **Static Analysis:** Cppcheck with MISRA addon
-
-## Project Structure
-project/
-├── GEMINI.md
-├── .gemini/
-│ └── commands/
-├── drivers/
-│ ├── rcc/
-│ ├── gpio/
-│ ├── spi/
-│ └── uart/
-├── app/
-│ └── main.c
-├── tests/
-│ ├── test_spi_driver.c
-│ └── test_gpio_driver.c
-└── project.yml
-
----
 
 ## MANDATORY CODING STANDARD — MISRA-C:2012
 
@@ -175,7 +144,6 @@ typedef enum
 
 ---
 
-## WHAT NOT TO DO
 
 - No printf or stdio.h in production (drivers/, port/, app/, sensor/)
 - No stdlib.h memory functions
